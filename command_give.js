@@ -12,7 +12,7 @@ function clickadded(){
     if (item == "") return(alert(未填入物品名稱))
     if (count == "") count = "1";
     if (data == "") data = "0";
-        cmd_text.innerHTML = "give " + target + " " + item + " " + count + " " + data;
+        cmd_text.value = "give " + target + " " + item + " " + count + " " + data;
 }
 function sele_change(){
     var sele = document.getElementById("sele")
