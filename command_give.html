@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel=icon type="image/x-icon" href="favicon.ico"/>
+        <body>
+            <title>give指令生成器</title>
+            <link rel="stylesheet" href="command.css">
+            <link rel="stylesheet" href="index.css">
+            <div style="background-color: skyblue; width:auto; height: 200px; display: flex; align-items: center; justify-content: center; font-size: 300%;">give指令生成器</div>
+            
+            <!-- 指令預覽 -->
+            <div class="command-div" style="height: 100px;">
+                <list>
+                    <p class="commandtext" style="font-size: 20px; margin: 10px; font-weight: bold;">指令預覽:</p>
+                    <h3 class="command" id="cmdtext">/give</h3>
+                    <br>
+                    <br>
+                    <br>
+                    <h1 class="commandtext">物品設定</h1>
+                    <!-- 物品設置 -->
+                    <div class="input, command-div" style="height: 300px;">
+                        <h2 class="commandtext">物品名稱:</h2>
+                            <input type="name" class="command" id="give_name">
+                        <br>
+                        <h2 class="commandtext">物品數量:</h2>
+                            <input type="number" class="command" id="give_number">
+                        <br>
+                        <h2 class="commandtext">物品數據值:</h2>
+                        <input type="number" class="command" id="give_data">
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <h1 class="commandtext">目標選擇器</h1>
+                    <div class="input, command-div" style="height: 200px;">
+                    <h2 class="commandtext">選擇器:</h2>
+                    <select id="sele" class="command">
+                        <option value="@s">@s 自己</option>
+                        <option value="@a">@a 所有玩家</option>
+                        <option value="@p">@p 最近玩家</option>
+                        <option value="@r">@r 隨機玩家</option>
+                    </select>
+                    <h2 class="commandtext">tag名字:</h2>
+                    <input type="name" class="command" id="give_tag">
+                    </div>
+                </list>
+                <br>
+                <br>
+                <div class="command-div">
+                    <strong><input type="button" value="生成指令" class="button" onclick="clickadd()"></strong>
+                  <strong><input type="button" value="一鍵複製" class="button" onclick="copy('command_give')"></strong>
+                </div>
+            </div>
+
+             <!--側欄頁面設計-->
+             <input type="checkbox" id= "side-menu-switch">
+<div class="side-menu">
+    <form action=""> 
+        <button><i class="fas fa-search"></i></button>
+    </form>
+    <ul class=nav>
+        <li>
+            <a href="index.html">主頁</a>
+            </li>
+            <li>
+            <a href="command_give.html">give指令生成器</a>
+        </li>
+    </nav>
+    <label for="side-menu-switch">
+        <i class="fas fa-caret-right"></i>
+    </label>
+</ul>
+        </body>
+    </head>
+</html>
+<script src="command_give.js"></script>
