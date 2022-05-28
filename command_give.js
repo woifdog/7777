@@ -8,13 +8,13 @@ function clickadd(){
     let item = document.getElementById("give_name").value;
     let data = document.getElementById("give_data").value;
     let count = document.getElementById("give_number").value;
-    let give_tag = document.getElementById("give_tag");
+    let give_tag = document.getElementById("give_tag").value;
     let array = "[tag=" + give_tag + "]";
     if (target == "") return(alert("未填入目標選擇器"))
     if (item == "") return(alert("未填入物品名稱"))
     if (count == "") count = "1";
     if (data == "") data = "0";
-    if(give_tag.innerHTNL = ""){
+    if(give_tag = ""){
         cmd_text.innerHTML = "/give" + " " + target + " " +item + " " + count + " " + data;
         console.log(cmd_text)
     }
