@@ -18,7 +18,7 @@ function clickadd(){
         cmd_text = "/give" + " " + target + " " +item + " " + count + " " + data;
         console.log(cmd_text)
     }
-    else if(!give_tag = ""){
+    else {
         let array = "[tag=" + give_tag + "]";
         cmd_text = "/give" + " " + target + "" + array + " " +item + " " + count + " " + data;
         console.log(cmd_text)
