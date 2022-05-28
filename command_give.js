@@ -8,14 +8,16 @@ function clickadd(){
     let item = document.getElementById("give_name").value;
     let data = document.getElementById("give_data").value;
     let count = document.getElementById("give_number").value;
-    var sele = document.getElementById("sele")
-    var sele_mode = sele.value
     if (target == "") return(alert("未填入目標選擇器"))
     if (item == "") return(alert("未填入物品名稱"))
     if (count == "") count = "1";
     if (data == "") data = "0";
     cmd_text.innerHTML = "/give" + " " + target + " " +item + " " + count + " " + data;
 
+}
+function sele_change(){
+    var sele = document.getElementById("sele")
+    var sele_mode = sele.value
 }
 function copy(){
     node = document.getElementById(id);
