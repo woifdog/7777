@@ -15,12 +15,12 @@ function clickadd(){
     if (count == "") count = "1";
     if (data == "") data = "0";
     if(give_tag = ""){
-        cmd_text.innerHTML = "/give" + " " + target + " " +item + " " + count + " " + data;
+        cmd_text = "/give" + " " + target + " " +item + " " + count + " " + data;
         console.log(cmd_text)
     }
-    else {
+    else if(!give_tag = ""){
         let array = "[tag=" + give_tag + "]";
-        cmd_text.innerHTNL = "/give" + " " + target + "" + array + " " +item + " " + count + " " + data;
+        cmd_text = "/give" + " " + target + "" + array + " " +item + " " + count + " " + data;
         console.log(cmd_text)
     }
 }
