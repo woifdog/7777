@@ -14,13 +14,13 @@ function clickadd(){
     if (item == "") return(alert("未填入物品名稱"))
     if (count == "") count = "1";
     if (data == "") data = "0";
-    if(give_tag = ""){
-        cmd_text = "/give" + " " + target + " " +item + " " + count + " " + data;
+    if(give_tag.value = ""){
+        cmd_text.value = "/give" + " " + target + " " +item + " " + count + " " + data;
         console.log(cmd_text)
     }
     else {
         let array = "[tag=" + give_tag + "]";
-        cmd_text = "/give" + " " + target + "" + array + " " +item + " " + count + " " + data;
+        cmd_text.value = "/give" + " " + target + "" + array + " " +item + " " + count + " " + data;
         console.log(cmd_text)
     }
 }
