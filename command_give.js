@@ -8,12 +8,19 @@ function clickadd(){
     let item = document.getElementById("give_name").value;
     let data = document.getElementById("give_data").value;
     let count = document.getElementById("give_number").value;
+    let tagname = document.getelementById("give_tag").value;
     let array = "[tag=" + give_tag + "]";
     if (target == "") target = @s
     if (item == "") return(alert("未填入物品名稱"))
     if (count == "") count = "1";
     if (data == "") data = "0";
-    cmd_text = "/give" + " " + target + " " +item + " " + count + " " + data;
+    if (tag = ""){
+        cmd_text.innerHTML = "give " + target + " " + item + " " + count + " " + data;
+    }
+    else {
+    var array = "[tag=tagname" + "" + ]
+    cmd_text.innerHTML = "give " + target + "" + array + " " + item + " " + count + " " + data;
+    }
 }
 function sele_change(){
     var sele = document.getElementById("sele")
