@@ -2,7 +2,7 @@
 var addcommand = document.getElementById("addcommand")
 var copy = document.getElementById("copy")
 //function
-function clickadd(){
+function clickadded(){
     let cmd_text = document.getElementById("cmdtext");
     let target = document.getElementById("sele").value;
     let item = document.getElementById("give_name").value;
