@@ -26,14 +26,6 @@ div {
     width: 70%;
     margin: 10px;
 }
-.commandbutton {
-    width:200px;
-    font-family: Changa;
-    background-color: rgb(214, 214, 214);
-    padding: 10px;
-    border-radius: 10px;
-    margin: 10px;
-}
 .button {
     display: inline;
     width: 49.5%;
@@ -45,4 +37,18 @@ div {
 }
 .button:hover {
     background-color: rgb(100, 97, 97);
+}
+.commandblock {
+    display:inline-block;
+    background-color: aqua;
+    border: solid 3px black;
+    border-radius: 10px;
+    width: 200px;
+    text-decoration: none;
+    color: black;
+    height: 50px;
+    font-size: 200%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
