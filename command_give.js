@@ -3,7 +3,7 @@ nbt_list = [];
 can_place = [];
 can_destroy = [];
 nbt_text = "";
-var cmd_text = document.getElementById("cmd_text");
+let no_drop = document.getElementById("no_drop");
 
 //nbt生成
 function nbt(){
@@ -11,7 +11,7 @@ function nbt(){
     can_place = [];
     can_destroy = [];
 
-    let no_drop = document.getElementById("no_drop").checked;
+    no_drop = document.getElementById("no_drop").checked;
     let back_set = document.getElementById("back_change").value;
     let can_place_text = document.getElementById("input_can_place").value;
     let can_destroy_text = document.getElementById("input_can_destroy").value;
@@ -53,7 +53,7 @@ function generate(command_list){
     nbt_text = nbt();
 
     if (target == "") target = "@s";
-    if (item == "") return(alert("未填入物品名稱"))
+    if (item == "") item = "apple";
     if (count == "") count = "1";
     if (data == "") data = "0";
 
@@ -87,5 +87,5 @@ function copy(id) {
     window.getSelection().removeAllRanges();
 }
 function kill(){
-    cmd_text.innerHTML = "/give"
+    no_drop.innerHTML = "/give"
 }
