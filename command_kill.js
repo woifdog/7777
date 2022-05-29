@@ -37,6 +37,6 @@ function copy(id) {
     window.getSelection().removeAllRanges();
 }
 
-function delete(){
+function kill(){
     cmd_text.innerHTML = "/give"
 }
