@@ -1,6 +1,9 @@
+//變數
+var cmd_text = document.getElementById("cmd_text");
+
 //生成
 function click_start(){
-    var cmd_text = document.getElementById("cmd_text");
+    cmd_text = document.getElementById("cmd_text");
     var input_tag = document.getElementById("kill_tag").value;
     var target = document.getElementById("input_target").value;
     if (input_tag != ""){
@@ -32,4 +35,8 @@ function copy(id) {
         alert('無法複製內容、瀏覽器不支援');       
     }
     window.getSelection().removeAllRanges();
+}
+
+function delete(){
+    cmd_text.innerHTML = "/give"
 }
