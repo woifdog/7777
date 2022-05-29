@@ -3,6 +3,7 @@ nbt_list = [];
 can_place = [];
 can_destroy = [];
 nbt_text = "";
+var cmd_text = document.getElementById("cmd_text");
 
 //nbt生成
 function nbt(){
@@ -43,7 +44,7 @@ function nbt(){
 
 //生成
 function generate(command_list){
-    let cmd_text = document.getElementById("cmd_text");
+    cmd_text = document.getElementById("cmd_text");
     let target = document.getElementById("input_target").value;
     let item = document.getElementById("input_item_id").value;
     let data = document.getElementById("input_item_data").value;
@@ -84,4 +85,7 @@ function copy(id) {
         alert('無法複製內容、瀏覽器不支援');       
     }
     window.getSelection().removeAllRanges();
+}
+function delete(){
+    cmd_text.innerHTML = "/give"
 }
