@@ -12,9 +12,6 @@
     width: 70%;
     margin: 10px;
 }
-body {
-    background-color: #bbb;
-}
 div {
     display:block;
 }
@@ -39,7 +36,7 @@ div {
     background-color: rgb(100, 97, 97);
 }
 .commandblock {
-    display:inline;
+    display: inline;
     background-color: aqua;
     border: solid 3px black;
     border-radius: 10px;
@@ -48,8 +45,23 @@ div {
     color: black;
     height: 50px;
     font-size: 200%; 
-    margin-top:10px;
+    margin-top: 10px;
+}
+body{
+    background-color: #bbb;
 }
 .btn {
     display: inline;
+}
+.commandbutton:hover {
+    background-color: rgb(100, 97, 97);
+}
+.commandbutton {
+        display: inline;
+        width: 70px;
+        height: 46px;
+        background-color: rgb(221, 217, 217);
+        border-radius: 10px;
+        padding: 10px;
+        font-weight: bold;
 }
