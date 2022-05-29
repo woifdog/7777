@@ -1,5 +1,5 @@
 //變數
-var cmd_text = document.getElementById("cmd_text");
+let cmd_text = document.getElementById("cmd_text");
 
 //生成
 function click_start(){
