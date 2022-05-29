@@ -52,7 +52,7 @@ function generate(command_list){
     nbt_text = nbt();
 
     if (target == "") target = "@s";
-    if (item == "") return(alert("未填入物品名稱"));
+    if (item == "") return(alert("未填入物品名稱"))
     if (count == "") count = "1";
     if (data == "") data = "0";
 
