@@ -39,7 +39,7 @@ div {
     background-color: rgb(100, 97, 97);
 }
 .commandblock {
-    display:inline-block;
+    display:inline;
     background-color: aqua;
     border: solid 3px black;
     border-radius: 10px;
@@ -48,7 +48,5 @@ div {
     color: black;
     height: 50px;
     font-size: 200%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top:10px;
 }
