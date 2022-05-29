@@ -3,7 +3,7 @@ nbt_list = [];
 can_place = [];
 can_destroy = [];
 nbt_text = "";
-let no_drop = document.getElementById("no_drop");
+var cmd_text = document.getElementById("cmd_text");
 
 //nbt生成
 function nbt(){
@@ -11,7 +11,7 @@ function nbt(){
     can_place = [];
     can_destroy = [];
 
-    no_drop = document.getElementById("no_drop").checked;
+    let no_drop = document.getElementById("no_drop").checked;
     let back_set = document.getElementById("back_change").value;
     let can_place_text = document.getElementById("input_can_place").value;
     let can_destroy_text = document.getElementById("input_can_destroy").value;
@@ -87,5 +87,5 @@ function copy(id) {
     window.getSelection().removeAllRanges();
 }
 function kill(){
-    no_drop.innerHTML = "/give"
+   cmd_text.innerHTML = "/give"
 }
