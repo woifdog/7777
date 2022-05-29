@@ -12,3 +12,24 @@ function click_start(){
         console.log(cmd_text)
     }
 }
+function copy(id) {
+    node = document.getElementById(id);
+    if (document.body.createTextRange) {
+        let range = document.body.createTextRange(id);
+        range.moveToElementText(node);
+        range.select();
+        document.execCommand("copy");
+        alert("指令複製成功!");
+    } else if (window.getSelection) {
+        let selection = window.getSelection();
+        let range = document.createRange(id);
+        range.selectNodeContents(node);
+        selection.removeAllRanges();
+        selection.addRange(range);
+        document.execCommand("copy");
+        alert("指令複製成功");
+    } else {
+        alert('無法複製內容、瀏覽器不支援');       
+    }
+    window.getSelection().removeAllRanges();
+}
