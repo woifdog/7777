@@ -38,5 +38,5 @@ function copy(id) {
 }
 
 function kill(){
-    cmd_text.innerHTML = "/give"
+    cmd_text.innerHTML = "/kill"
 }
