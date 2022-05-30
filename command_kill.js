@@ -1,9 +1,6 @@
-//變數
-let cmd_text = document.getElementById("cmd_text");
-
 //生成
 function click_start(){
-    cmd_text = document.getElementById("cmd_text");
+    var cmd_text = document.getElementById("cmd_text");
     var input_tag = document.getElementById("kill_tag").value;
     var target = document.getElementById("input_target").value;
     if (input_tag != ""){
@@ -15,7 +12,7 @@ function click_start(){
         console.log(cmd_text)
     }
 }
-function copy(id) {
+function copyText(id){
     node = document.getElementById(id);
     if (document.body.createTextRange) {
         let range = document.body.createTextRange(id);
@@ -36,7 +33,6 @@ function copy(id) {
     }
     window.getSelection().removeAllRanges();
 }
-
 function kill(){
     cmd_text.innerHTML = "/kill"
 }

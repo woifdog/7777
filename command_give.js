@@ -3,7 +3,7 @@ nbt_list = [];
 can_place = [];
 can_destroy = [];
 nbt_text = "";
-var cmd_text = document.getElementById("cmd_text");
+let cmd_text = document.getElementById("cmd_text");
 
 //nbt生成
 function nbt(){
@@ -87,5 +87,5 @@ function copy(id) {
     window.getSelection().removeAllRanges();
 }
 function kill(){
-   cmd_text.innerHTML = "/give"
+    cmd_text.innerHTML = "/give"
 }
