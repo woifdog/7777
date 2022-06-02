@@ -54,15 +54,12 @@ body{
 .btn {
     display: inline;
 }
-.commandbutton:hover {
-    background-color: rgb(100, 97, 97);
-}
 .commandbutton {
-        display: inline;
-        width: 70px;
-        height: 46px;
-        background-color: rgb(221, 217, 217);
-        border-radius: 10px;
-        padding: 10px;
-        font-weight: bold;
+    display: inline;
+    width: 70px;
+    height: 46px;
+    background-color: #bbb;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
 }
