@@ -34,5 +34,5 @@ function copy(id) {
     window.getSelection().removeAllRanges();
 }
 function kill(){
-    cmd_text.innerHTML = "clear"
+   document.getElementById("cmdtext").innerHTML = "/clear"
 }
