@@ -32,7 +32,7 @@
     border-right: solid #ACC0D8 1px;
 }
 body {
-    font-size: calc(16px + (18 - 14) * ((100vw - 300px) / (1440 - 300)));
+    font-size: calc(16px + (18 - 15) * ((100vw - 300px) / (1440 - 300)));
 }
 @media screen and (max-width:600px) {
     head{font-size: 15px;}
